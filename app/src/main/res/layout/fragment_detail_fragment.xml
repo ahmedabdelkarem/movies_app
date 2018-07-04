@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/detail_fragment">
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+
+        android:fillViewport="true"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:id="@+id/container"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"  >
+
+            <!-- your components -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="76dp"
+                android:textAppearance="@style/Animation.AppCompat.DropDownUp"
+                android:text="Large Text"
+                android:id="@+id/title_textview"
+                android:layout_gravity="center_horizontal"
+                android:background="#00bfa5"
+                android:textSize="30sp"
+                android:textColor="#fbf6f6" />
+
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="200dp"
+                    android:layout_height="200dp"
+                    android:id="@+id/imageView"
+
+                    android:textAlignment="center" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movie_date"
+                        android:text="Date"
+                        android:layout_gravity="center"
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movie_rate"
+                        android:layout_gravity="center"
+                        android:text="Rate"
+                        android:textSize="17dp"
+                        android:textColor="@android:color/black"  />
+
+                    <ImageButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/movie_favourite"
+                        android:background="#00FFFFFF"
+                        android:src="@android:drawable/btn_star_big_off"
+                        />
+                </LinearLayout>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/movie_overview_txtview"
+                android:text="movie overview"
+                android:textSize="17dp"
+                android:textColor="@android:color/black"
+                android:textAppearance="@style/Base.Widget.AppCompat.ListView.Menu" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/trailer_layout"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Trailer :"
+                    android:textSize="30dp"
+                    android:background="#00bfa5"
+                    android:textColor="#fdfbfb" />
+
+                <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+                    android:layout_width="fill_parent"
+                    android:layout_height="fill_parent"
+                    android:nestedScrollingEnabled="true"
+                    android:fillViewport="true"
+                    android:orientation="vertical" >
+
+                        <ListView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/trailer_list"/>
+
+                </ScrollView>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/review_layout"
+                android:orientation="vertical" >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:text="Reviews :"
+                    android:textSize="30dp"
+                    android:background="#00bfa5"
+                    android:textColor="#fdfbfb" />
+                <ListView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/review_list"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

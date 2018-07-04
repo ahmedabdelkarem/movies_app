@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1">
+
+    <ImageView
+        android:layout_width="130dp"
+        android:layout_height="100dp"
+        android:id="@+id/imageView2"
+        android:src="@drawable/download"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        android:layout_x="3dp"
+        android:layout_y="12dp" />
+
+    <TextView
+        android:layout_width="210dp"
+        android:layout_height="107dp"
+        android:text="New Text"
+        android:textSize="@dimen/activity_horizontal_margin"
+        android:id="@+id/textView2"
+        android:layout_gravity="right"
+        android:layout_weight="0.60"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_x="149dp"
+        android:layout_y="51dp" />
+</AbsoluteLayout>
